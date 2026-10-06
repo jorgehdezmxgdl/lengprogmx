@@ -11,14 +11,19 @@ class Animal {
 private:
     string likes;
     int    edad;
+    string raza;
+    string nombre;
 public:
     Animal();  //constructor
+    Animal(string raza, string nombre, int edad):
+        raza(raza), nombre(nombre), edad(edad) {}
     ~Animal(); //destructor
     string getLikes();
     void setLikes(string likes);
     int  getEdad();
     void setEdad(int edad);
-    virtual void emite_sonido() = 0;
+    virtual void emite_sonido() = 0; // sobrecarga (funcion virtual pura)
+    void info() const;
 };
 
 

@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(mascotas main.cpp
         Animal.cpp
-        Animal.h)
+        Animal.h
+        Perro.cpp
+        Perro.h)

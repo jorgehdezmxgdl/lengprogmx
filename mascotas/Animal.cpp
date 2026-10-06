@@ -26,3 +26,10 @@ int Animal::getEdad() {
 void Animal::setEdad(int edad) {
     this->edad = edad;
 }
+
+void Animal::info() const {
+    cout << "Nombre: " << this->nombre << endl;
+    cout << "Edad  : " << this->edad   << endl;
+    cout << "Raza  : " << this->raza   << endl;
+    cout << "Gustos: " << this->likes  << endl;
+}
