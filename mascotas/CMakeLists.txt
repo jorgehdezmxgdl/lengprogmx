@@ -7,4 +7,6 @@ add_executable(mascotas main.cpp
         Animal.cpp
         Animal.h
         Perro.cpp
-        Perro.h)
+        Perro.h
+        FileManager.cpp
+        FileManager.h)
