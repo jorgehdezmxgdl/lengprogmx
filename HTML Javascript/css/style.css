@@ -1,0 +1,20 @@
+body {
+  color: black;
+  font-size: 15px;
+  background-color: white;  
+}
+
+h1, h2, h3{
+    color: white;
+    font-size: 20px;
+}
+
+.parrafo1 {
+    color: blue;
+    margin: 5px;
+}
+
+#parrafo2 {
+    color: black;
+    font-weight: bold;
+}

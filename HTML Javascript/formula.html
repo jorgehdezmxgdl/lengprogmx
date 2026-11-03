@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calcular(){
+            let numeroa = document.getElementById("numeroa").value;
+            let numerob = document.getElementById("numerob").value;
+            let numeroc = document.getElementById("numeroc").value;
+            let resultado = (-1 * numerob) + Math.sqrt((numerob * numerob) - (4 *numeroa * numeroc))/(2 * numeroa);
+            let resultado2 = (-1 * numerob) - Math.sqrt((numerob * numerob) - (4 *numeroa * numeroc))/(2 * numeroa);
+            let respuesta = document.getElementById("resultado");
+            respuesta.innerHTML = " ";
+            respuesta.innerHTML += resultado + "," + resultado2;
+    
+        }
+    </script>
+</head>
+<body>
+    <p>Ingrese el valor de a</p>
+    <input type="number"id="numeroa"/>
+    <p>Ingrese el valor de b</p>
+    <input type="number" id="numerob">
+    <p>Ingrese el valor de c</p>
+    <input type="number" id="numeroc">
+    <button onclick ="calcular()">Calcular</button>
+    <p id="resultado"></p>
+    
+</body>
+</html>
