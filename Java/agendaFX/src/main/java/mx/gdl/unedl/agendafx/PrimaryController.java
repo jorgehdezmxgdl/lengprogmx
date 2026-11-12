@@ -17,6 +17,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
+import mx.gdl.unedl.agendafx.archivos.FileManager;
 import mx.gdl.unedl.agendafx.modelo.Persona;
 
 /**
@@ -59,6 +60,9 @@ public class PrimaryController implements Initializable {
             "33 4512 " + 
             (int)((Math.random() * 8999) + 1000) ,
                 "fede@gmail.com");
+        FileManager filemanager = new FileManager("agenda.txt");
+        filemanager.guardaRegistro(persona.getNombre(), 
+                persona.getTelefono(), persona.getCorreo());
         datos.add(persona);
     }
 
