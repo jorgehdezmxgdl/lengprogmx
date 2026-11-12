@@ -1,4 +1,5 @@
 mx\gdl\unedl\agendafx\PrimaryController.class
 mx\gdl\unedl\agendafx\SecondaryController.class
 module-info.class
+mx\gdl\unedl\agendafx\modelo\Persona.class
 mx\gdl\unedl\agendafx\App.class
